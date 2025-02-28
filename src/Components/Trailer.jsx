@@ -4,7 +4,7 @@ const Trailer = () => {
   return (
     <div>
         <video className='w-screen' autoPlay muted loop playsInline>
-            <source src={Trailer_Abyss} type="video/webm" />
+            <source src={Trailer_Abyss} type="video/mp4" />
         </video>
     </div>
   )
