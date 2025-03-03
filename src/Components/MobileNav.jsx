@@ -34,10 +34,10 @@ const MobileNav = () => {
 
   return (
     <nav className="md:hidden">
-      <div className="fixed top-0 left-0 w-screen h-32 bg-black/15 backdrop-blur-sm z-40">
+      <div className="fixed top-0 left-0 w-screen h-16 bg-black/15 backdrop-blur-sm z-40">
         <button
           aria-label="Logo"
-          className="absolute top-10 left-10 w-[50px] h-[50px]"
+          className="absolute top-5 left-5 w-[25px] h-[25px]"
         >
           <div
             id="borderParent"
@@ -52,9 +52,9 @@ const MobileNav = () => {
         <button
           aria-label="Open Menu"
           onClick={handleMenuOpen}
-          className="fixed top-10 right-10"
+          className="fixed top-5 right-5"
         >
-          <IoMdMenu className="w-[50px] h-[50px] text-white" />
+          <IoMdMenu className="w-[25px] h-[25px] text-white" />
         </button>
       </div>
       <aside
