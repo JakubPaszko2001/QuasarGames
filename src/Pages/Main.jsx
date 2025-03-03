@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Trailer from '../Components/Trailer'
+import MainPage from '../Components/Main'
+// import Trailer from '../Components/Trailer'
 const Main = () => {
   return (
-    <main>
+    <main className='h-screen'>
       <Navbar />
-      <Trailer />
+      <MainPage />
+      {/* <Trailer /> */}
     </main>
   )
 }

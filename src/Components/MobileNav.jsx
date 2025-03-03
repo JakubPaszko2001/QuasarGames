@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import gsap from "gsap";
 import Icons from "./Icons";
+import Logo from "../assets/Abyss-Logo2.png";
 
 const MobileNav = () => {
   gsap.registerPlugin();
@@ -33,31 +34,32 @@ const MobileNav = () => {
 
   return (
     <nav className="md:hidden">
-      <div className="fixed top-0 left-0 w-screen h-32 bg-light dark:bg-dark z-40">
+      <div className="fixed top-0 left-0 w-screen h-32 bg-black/15 backdrop-blur-sm z-40">
         <button
           aria-label="Logo"
           className="absolute top-10 left-10 w-[50px] h-[50px]"
         >
-          {/* <div
+          <div
             id="borderParent"
             className="relative w-full h-full flex justify-center items-center"
           >
-            <BorderLogo />
+            <img className="w-[100px]" src={Logo} alt="Abyss Logo" />
+            {/* <BorderLogo />
             <p className=" text-2xl">J</p>
-            <BorderLogo rotate={true} />
-          </div> */}
+            <BorderLogo rotate={true} /> */}
+          </div>
         </button>
         <button
           aria-label="Open Menu"
           onClick={handleMenuOpen}
           className="fixed top-10 right-10"
         >
-          <IoMdMenu className="w-[50px] h-[50px] " />
+          <IoMdMenu className="w-[50px] h-[50px] text-white" />
         </button>
       </div>
       <aside
         ref={asideRef}
-        className="box fixed top-0 right-0 w-full h-full bg-light dark:bg-dark -translate-y-[100%] z-50"
+        className="box fixed top-0 right-0 w-full h-full bg-black -translate-y-[100%] z-50"
       >
         <button
           aria-label="Close Menu"
@@ -65,7 +67,7 @@ const MobileNav = () => {
           onClick={handleMenuClose}
           className="absolute top-10 right-10"
         >
-          <IoMdClose className="w-[50px] h-[50px]" />
+          <IoMdClose className="w-[50px] h-[50px] text-white" />
         </button>
         <NavUl menuOpen={menuOpen} />
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
