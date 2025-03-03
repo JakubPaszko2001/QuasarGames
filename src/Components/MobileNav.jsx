@@ -59,7 +59,7 @@ const MobileNav = () => {
       </div>
       <aside
         ref={asideRef}
-        className="box fixed top-0 right-0 w-full h-full bg-black -translate-y-[100%] z-50"
+        className="box fixed top-0 right-0 w-full h-full bg-black/80 backdrop-blur-sm -translate-y-[100%] z-50"
       >
         <button
           aria-label="Close Menu"
