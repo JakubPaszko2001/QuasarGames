@@ -9,7 +9,7 @@ const Main = () => {
       <Navbar />
       <Trailer />
       {/* <MainPage /> */}
-      {/* <Kick /> */}
+      <Kick />
     </main>
   )
 }
