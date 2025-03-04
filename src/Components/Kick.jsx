@@ -8,12 +8,12 @@ const Kick = () => {
       <div className="flex min-w-[200%] animate-marquee">
         {/* Powielamy treść, aby animacja była płynna */}
         <div className="flex items-center justify-center gap-2 w-full font-custom">
-          <img src={kickLogo} alt="Kickstarter" className="w-1/4" />
-          <h1 className="font-custom text-[#00CF73] font-bold text-xl">COMING SOON</h1>
+          {/* <img src={kickLogo} alt="Kickstarter" className="w-1/4" /> */}
+          <h1 className="font-custom text-[#00CF73] font-bold text-xl">KICKSTARTER COMING SOON</h1>
         </div>
         <div className="flex items-center justify-center gap-2 w-full font-custom">
-          <img src={kickLogo} alt="Kickstarter" className="w-1/4" />
-          <h1 className="font-custom text-[#00CF73] font-bold text-xl">COMING SOON</h1>
+          {/* <img src={kickLogo} alt="Kickstarter" className="w-1/4" /> */}
+          <h1 className="font-custom text-[#00CF73] font-bold text-xl">KICKSTARTER COMING SOON</h1>
         </div>
       </div>
     </div>
