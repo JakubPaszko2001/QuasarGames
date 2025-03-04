@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import kickLogo from "../assets/Kickstarter-Logo.png";
 
 const Kick = () => {
   return (
-    <div>Kick</div>
-  )
-}
+    <div className="relative overflow-hidden w-full bg-black border-t-4 border-b-4 border-[#00CF73] h-16 flex items-center">
+      {/* Kontener dla płynnie przesuwających się elementów */}
+      <div className="flex min-w-[200%] animate-marquee">
+        {/* Powielamy treść, aby animacja była płynna */}
+        <div className="flex items-center justify-center gap-2 w-full">
+          <img src={kickLogo} alt="Kickstarter" className="w-1/4" />
+          <h1 className="text-[#00CF73] font-bold text-xl">COMING SOON</h1>
+        </div>
+        <div className="flex items-center justify-center gap-2 w-full">
+          <img src={kickLogo} alt="Kickstarter" className="w-1/4" />
+          <h1 className="text-[#00CF73] font-bold text-xl">COMING SOON</h1>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Kick
+export default Kick;
