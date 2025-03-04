@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Customfont";
+  src: url("../src/assets/RNS-B.ttf");
+}
+
+.font-custom {
+  font-family: "Customfont";
+}
+
+
 @keyframes marquee {
   from {
     transform: translateX(-50%);
@@ -14,15 +34,4 @@
   white-space: nowrap;
   will-change: transform;
   animation: marquee 8s linear infinite;
-}
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  background-color: black;
 }
