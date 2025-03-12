@@ -44,9 +44,6 @@ const MobileNav = () => {
             className="relative w-full h-full flex justify-center items-center"
           >
             <img className="w-[100px]" src={Logo} alt="Abyss Logo" />
-            {/* <BorderLogo />
-            <p className=" text-2xl">J</p>
-            <BorderLogo rotate={true} /> */}
           </div>
         </button>
         <button
