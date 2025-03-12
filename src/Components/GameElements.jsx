@@ -3,7 +3,7 @@ import QuickInfo from './QuickInfo'
 import Board from '../assets/Game-Elements.png'
 const GameElements = () => {
     const glowStyle = {
-        width: '100vw',
+        width: '100%',
         height: '100vh',
         background: 'radial-gradient(circle, rgba(34,0,102,0.8) 0%, rgba(0,0,0,1) 80%)',
       };
