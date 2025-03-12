@@ -16,7 +16,7 @@ const GameElements = () => {
             <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10' style={glowStyle}></div>
             <img src={Blur} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 blur-xs' alt='Blured Abyss' />
         </div>
-        <div className="w-full bg-[#181639]/50 border-t-1 border-b-2 border-[#27204E] border-opacity-100 rounded-[20px] !px-6 !pb-8 text-white flex flex-col">
+        <div className="w-full bg-[#181639]/50 border-y-1 border-[#27204E] border-opacity-100 rounded-[20px] !px-6 !pb-8 text-white flex flex-col">
             <h2 className="text-center text-2xl font-serif !py-8">Game Elements</h2>
             <div className="flex gap-4 text-sm justify-between text-lg">
                 <ul className="flex flex-col space-y-1 text-left">
