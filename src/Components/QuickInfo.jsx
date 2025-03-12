@@ -4,7 +4,7 @@ import { PiUsersThree } from "react-icons/pi";
 import { IoMdTime } from "react-icons/io";
 const QuickInfo = () => {
   return (
-<div className='w-full flex justify-between text-white !px-8 !py-4'>
+<div className='w-full flex justify-between text-white !px-8 !mt-8'>
         <div className='flex flex-col items-center'>
             <PiUserBold className='text-[3rem]' />
             <h1>+14</h1>
