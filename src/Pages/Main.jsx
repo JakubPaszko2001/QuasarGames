@@ -4,6 +4,9 @@ import Trailer from '../Components/Trailer'
 import Kick from '../Components/Kick'
 import QuickInfo from '../Components/QuickInfo'
 import GameElements from '../Components/GameElements'
+import HTP from '../Components/HTP'
+import TrailerAbyss from '../Components/TrailerAbyss'
+import Gallery from '../Components/Gallery'
 const Main = () => {
   return (
     <main>
@@ -11,6 +14,9 @@ const Main = () => {
       <Trailer />
       <Kick />
       <GameElements />
+      <HTP />
+      <TrailerAbyss />
+      <Gallery />
     </main>
   )
 }
