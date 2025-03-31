@@ -1,50 +1,78 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
+import ra from "../assets/ra2.png";
+import koszary from "../assets/koszary.png";
+import emblemat from "../assets/Emblemat.png";
+import Main_Background from "../assets/Main_Background.png";
+import Play_button from "../assets/play-button.png";
 
 const HTP = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoId = "2LPd07zzT9g"; // ID wideo z linku
 
   return (
-    <div className="flex flex-col w-full items-center">
-      <h1 className="text-4xl font-bold !my-12 text-[#2F1C8A]">HOW TO PLAY</h1>
+    <div className="flex flex-col w-full items-center justify-center">
+      <div className="text-center flex justify-center items-center !my-12">
+        <img src={emblemat} alt="Robot Emblemat image" />
+      </div>
 
-      <div className="relative w-full max-w-2xl cursor-pointer">
+      <div className="relative w-full max-w-2xl !my-12 cursor-pointer">
         {isPlaying ? (
           <ReactPlayer
             url={`https://www.youtube.com/watch?v=${videoId}`}
             playing={true}
             controls={true}
             width="100%"
-            // height="400px"
           />
         ) : (
-          <div
-            className="relative w-full"
-            onClick={() => setIsPlaying(true)}
-          >
+          <div className="relative w-full group overflow-hidden" onClick={() => setIsPlaying(true)}>
             {/* Miniatura z YouTube */}
             <img
-              src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+              src={Main_Background}
               alt="Miniatura wideo"
-              className="w-full rounded-lg"
+              className="w-full transition-opacity duration-700 group-hover:opacity-80"
             />
+
+            {/* Fade z góry i dołu */}
+            <div className="absolute inset-0 pointer-events-none">
+              {/* Góra */}
+              <div className="absolute top-0 left-0 w-full h-1/6 bg-[linear-gradient(180deg,_rgba(0,0,0,1)_0%,_rgba(0,0,0,0)_100%)]" />
+              {/* Dół */}
+              <div className="absolute bottom-0 left-0 w-full h-1/6 bg-[linear-gradient(0deg,_rgba(0,0,0,1)_0%,_rgba(0,0,0,0)_100%)]" />
+            </div>
+
             {/* Przycisk Play */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-black bg-opacity-50 rounded-full p-4">
+              <div className="bg-opacity-50 rounded-full p-4">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+                  src={Play_button}
                   alt="Play"
-                  className="w-16"
+                  className="w-8"
                 />
               </div>
             </div>
           </div>
         )}
       </div>
-      <div className="w-full bg-[#181639]/50 border-y-1 border-[#27204E] border-opacity-100 rounded-[20px] text-white flex flex-col !px-6 !py-4 !mt-14">
-            <p2 className="text-center text-lg font-serif !py-8">In the endless and desolate deserts of the world, the god Abyss reigns, surrounded by darkness and mystery. It's a place where magic blends with reality, creating a land full of dangers and surprises. </p2>
+
+      <div className="!my-12">
+        <div className="w-full flex flex-col justify-center items-center">
+          <h1 className="text-5xl text-[#4F81FF] kranky-regular">TRAILER</h1>
+          <div className="flex !ml-30 !mt-4">
+            <img className="w-6" src={ra} alt="ra image" />
+            <img className="w-6" src={ra} alt="ra image" />
+            <img className="w-6" src={ra} alt="ra image" />
+            <img className="w-6" src={ra} alt="ra image" />
+            <img className="w-6" src={ra} alt="ra image" />
+            <img className="w-6" src={ra} alt="ra image" />
+            <img className="w-6" src={ra} alt="ra image" />
+          </div>
+          {/* <img src={koszary} alt="Image of Barracs" /> */}
         </div>
+      </div>
+      <div className="!my-12">
+        <p className="text-[#4F81FF] text-lg !px-12 text-center">In the endless and desolate deserts of the world, the god Abyss reigns, surrounded by darkness and mystery. It's a place where magic blends with reality, creating a land full of dangers and surprises. </p>
+      </div>
     </div>
   );
 };

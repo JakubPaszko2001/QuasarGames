@@ -6,7 +6,7 @@ const GameElements = () => {
     const glowStyle = {
         width: '100%',
         height: '100vh',
-        background: 'radial-gradient(circle, rgba(34,0,102,0.8) 0%, rgba(0,0,0,1) 80%)',
+        background: 'radial-gradient(circle, rgba(0,27,95,0.8) 0%, rgba(0,0,0,1) 80%)',
       };
   return (
     <div className='w-full flex flex-col justify-center items-center'>
@@ -16,7 +16,7 @@ const GameElements = () => {
             <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10' style={glowStyle}></div>
             <img src={Blur} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 blur-xs' alt='Blured Abyss' />
         </div>
-        <div className="w-full bg-[#181639]/50 border-y-1 border-[#27204E] border-opacity-100 rounded-[20px] !px-6 !pb-8 text-white flex flex-col">
+        <div className="w-full bg-[#4F81FF]/8 border-y-1 border-[#3971FF]/25 border-opacity-100 rounded-[20px] !px-6 !pb-8 text-white flex flex-col">
             <h2 className="text-center text-2xl font-serif !py-8">Game Elements</h2>
             <div className="flex gap-4 text-sm justify-between text-lg">
                 <ul className="flex flex-col space-y-1 text-left">

@@ -15,8 +15,8 @@ const Main = () => {
       <Kick />
       <GameElements />
       <HTP />
-      <TrailerAbyss />
-      <Gallery />
+      {/* <TrailerAbyss /> */}
+      {/* <Gallery /> */}
     </main>
   )
 }

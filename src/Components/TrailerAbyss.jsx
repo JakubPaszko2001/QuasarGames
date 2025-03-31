@@ -7,7 +7,7 @@ const TrailerAbyss = () => {
 
   return (
     <div className="flex flex-col w-full items-center">
-      <h1 className="text-4xl font-bold !my-12 text-[#2F1C8A]">HOW TO PLAY</h1>
+      <h1 className="text-4xl font-bold !my-12 text-[#2F1C8A] kranky-regular">HOW TO PLAY</h1>
 
       <div className="relative w-full max-w-2xl cursor-pointer">
         {isPlaying ? (
