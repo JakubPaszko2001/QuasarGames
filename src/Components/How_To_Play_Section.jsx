@@ -8,7 +8,7 @@ import Play_button from "../assets/play-button.png";
 
 const How_To_Play_Section = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const videoId = "Sbr0_bkzPB8"; // Poprawiony ID wideo
+  const videoId = "2LPd07zzT9g&t"; // Poprawiony ID wideo
 
   return (
     <div className="flex flex-col w-full items-center justify-center relative">
