@@ -71,10 +71,22 @@ const How_To_Play_Section = () => {
       <div className="!my-12">
         <div className="w-full flex flex-col justify-center items-center">
           <h1 className="text-5xl text-[#b9935b] kranky-regular">HOW TO PLAY</h1>
-          <div className="flex !ml-30 !mt-4">
-            {[...Array(7)].map((_, i) => (
-              <img key={i} className="w-6" src={ra} alt="ra image" />
-            ))}
+          <div className="flex !mt-4 !ml-4">
+            <div className="flex">
+              <img className="w-6" src={ra} alt="ra image" />
+              <img className="w-6" src={ra} alt="ra image" />
+              <img className="w-6" src={ra} alt="ra image" />
+            </div>
+            <div className="flex !mx-10">
+              <img className="w-6" src={ra} alt="ra image" />
+              <img className="w-6" src={ra} alt="ra image" />
+            </div>
+            <div className="flex">
+              <img className="w-6" src={ra} alt="ra image" />
+              <img className="w-6" src={ra} alt="ra image" />
+              <img className="w-6" src={ra} alt="ra image" />
+              <img className="w-6" src={ra} alt="ra image" />
+            </div>
           </div>
         </div>
       </div>
