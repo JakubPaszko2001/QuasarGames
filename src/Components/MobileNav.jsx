@@ -26,7 +26,7 @@ const MobileNav = () => {
   }
 
   return (
-    <nav className="md:hidden">
+    <nav className="xl:hidden">
       <div className="fixed top-0 left-0 w-screen h-16 bg-black/15 backdrop-blur-sm z-40">
         <button
           aria-label="Logo"

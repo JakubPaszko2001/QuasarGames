@@ -17,7 +17,7 @@ const DesktopNav = () => {
     });
   });
   return (
-    <nav className="hidden fixed top-0 left-0 md:block z-50">
+    <nav className="hidden fixed top-0 left-0 xl:block z-50">
       <div className="navbar flex w-screen h-36 px-10 bg-light dark:bg-dark transition-transform duration-300">
         <Icons menuOpen={menuOpen} />
         <NavUl menuOpen={menuOpen} />

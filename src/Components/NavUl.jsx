@@ -8,7 +8,7 @@ const NavUl = ({ menuOpen }) => {
 
   return (
     <>
-      <ul className="w-full h-full flex flex-col md:flex-row justify-center md:justify-end items-center gap-8 md:gap-2 text-3xl text-white">
+      <ul className="w-full h-full flex flex-col xl:flex-row justify-center xl:justify-end items-center gap-8 text-3xl md:text-4xl text-white">
         {liMenu.map((item) => (
           <li key={item.name}>
             <a
@@ -18,7 +18,6 @@ const NavUl = ({ menuOpen }) => {
               className="underlineText flex"
             >
               {item.name}
-              {item.span && <span className="hidden md:block ml-2">|</span>}
             </a>
           </li>
         ))}

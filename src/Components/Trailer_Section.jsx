@@ -38,7 +38,7 @@ const Trailer_Section = () => {
 
       {/* EMBLEMAT */}
       <div className="text-center flex justify-center items-center !my-12">
-        <img src={emblemat} alt="Robot Emblemat image" />
+        <img className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
       </div>
 
       {/* MINIATURA Z PRZYCISKIEM */}
@@ -69,10 +69,10 @@ const Trailer_Section = () => {
       {/* TYTUŁ + IKONY */}
       <div className="!my-12">
         <div className="w-full flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-[#4F81FF] kranky-regular">TRAILER</h1>
+          <h1 className="text-5xl text-[#4F81FF] kranky-regular md:text-8xl">TRAILER</h1>
           <div className="flex !ml-30 !mt-4">
             {[...Array(7)].map((_, i) => (
-              <img key={i} className="w-6" src={ra} alt="ra image" />
+              <img key={i} className="w-6 md:w-10" src={ra} alt="ra image" />
             ))}
           </div>
         </div>
@@ -80,7 +80,7 @@ const Trailer_Section = () => {
 
       {/* OPIS */}
       <div className="!my-12">
-        <p className="text-[#4F81FF] text-lg !px-12 text-center">
+        <p className="text-[#4F81FF] text-lg !px-12 text-center md:text-2xl md:!px-30">
           In the endless and desolate deserts of the world, the god Abyss reigns, surrounded by darkness and mystery. It's a place where magic blends with reality, creating a land full of dangers and surprises.
         </p>
       </div>
