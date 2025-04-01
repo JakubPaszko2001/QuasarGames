@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import ra from "../assets/ra2.png";
-import koszary from "../assets/koszary.png";
-import emblemat from "../assets/Emblemat.png";
-import Main_Background from "../assets/Main_Background.png";
-import Play_button from "../assets/play-button.png";
+import ra from "../assets/ra2.webp";
+import emblemat from "../assets/Emblemat.webp";
+import Main_Background from "../assets/Main_Background.webp";
+import Play_button from "../assets/play-button.webp";
 
 const Trailer_Section = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

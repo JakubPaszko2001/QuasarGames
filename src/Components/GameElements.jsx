@@ -1,7 +1,7 @@
 import React from 'react'
 import QuickInfo from './QuickInfo'
-import Board from '../assets/Game-Elements.png'
-import Blur from '../assets/Blur.png'
+import Board from '../assets/Game-Elements.webp'
+import Blur from '../assets/Blur.webp'
 const GameElements = () => {
     const glowStyle = {
         width: '100%',

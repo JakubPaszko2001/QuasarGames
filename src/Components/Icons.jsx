@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ImSun } from "react-icons/im";
 import { TbMoon } from "react-icons/tb";
-import Logo from "../assets/Abyss-Logo.png";
+import Logo from "../assets/Abyss-Logo.webp";
 const Icons = ({ menuOpen }) => {
   const [theme, setTheme] = useState("system");
   const elemet = document.documentElement;

@@ -4,19 +4,12 @@ import { useState, useRef } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import gsap from "gsap";
 import Icons from "./Icons";
-import Logo from "../assets/Abyss-Logo2.png";
+import Logo from "../assets/Abyss-Logo2.webp";
 
 const MobileNav = () => {
   gsap.registerPlugin();
   const [menuOpen, setMenuOpen] = useState(false);
   const asideRef = useRef();
-
-  const BorderLogo = ({ rotate }) => {
-    const style = `absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] border-black dark:border-light border-2 ${
-      rotate === true ? "rotate-45" : "rotate-0"
-    }`;
-    return <div className={style} />;
-  };
 
   function handleMenuOpen() {
     setMenuOpen(!menuOpen);

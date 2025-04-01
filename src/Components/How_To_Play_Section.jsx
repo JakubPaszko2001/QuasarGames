@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import ra from "../assets/ra.png";
-import koszary from "../assets/koszary.png";
-import emblemat from "../assets/Emblemat_Pustynia.png";
-import HTP_Background from "../assets/HTP_Background.png";
-import Play_button from "../assets/play-button.png";
+import ra from "../assets/ra.webp";
+import emblemat from "../assets/Emblemat_Pustynia.webp";
+import HTP_Background from "../assets/HTP_Background.webp";
+import Play_button from "../assets/play-button.webp";
 
 const How_To_Play_Section = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

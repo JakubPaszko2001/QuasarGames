@@ -1,5 +1,6 @@
 import React from 'react';
 import Trailer_Abyss from '../assets/Trailer-Mobile.mp4';
+import Stop_Klatka from '../assets/Stop_Klatka_Mobile.webp';
 const Main_Page = () => {
   return (
     <div className="relative inset-0 w-full h-screen">
@@ -9,6 +10,7 @@ const Main_Page = () => {
         muted
         loop
         playsInline
+        poster={Stop_Klatka}
       >
         <source src={Trailer_Abyss} type="video/mp4" />
       </video>
