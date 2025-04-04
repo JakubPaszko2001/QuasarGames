@@ -1,9 +1,10 @@
 import React from 'react';
-import Trailer_Abyss from '../assets/Trailer-Mobile.mp4';
+import Trailer_Abyss_Mobile from '../assets/Trailer-Mobile.mp4';
+import Trailer_Abyss from '../assets/Abyss-Trailer.mp4';
 import Stop_Klatka from '../assets/Stop_Klatka_Mobile.webp';
 const Main_Page = () => {
   return (
-    <div className="relative inset-0 w-full h-screen">
+    <div className="relative inset-0 w-full h-screen flex justify-center items-center">
       <video
         className="w-full h-full object-cover"
         autoPlay
