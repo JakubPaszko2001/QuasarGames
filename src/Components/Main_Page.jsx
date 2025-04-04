@@ -15,7 +15,7 @@ const Main_Page = () => {
       >
         <source src={Trailer_Abyss} type="video/mp4" />
       </video>
-      <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-black/90 to-transparent"></div>
+      <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-black/90 to-transparent xl:hidden"></div>
     </div>
   );
 };
