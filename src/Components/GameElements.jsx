@@ -5,7 +5,7 @@ import Blur from '../assets/Blur.webp'
 const GameElements = () => {
   const glowStyle = {
     width: '100%',
-    height: '100vh',
+    height: '120vh',
     background: 'radial-gradient(circle, rgba(0,27,95,0.8) 0%, rgba(0,0,0,1) 80%)',
   }
 
@@ -19,7 +19,7 @@ const GameElements = () => {
           alt='Game Elements Board'
         />
         <div
-          className='absolute top-0 left-0 w-full h-full -z-10'
+          className='absolute top-[-20vh] left-0 -z-10'
           style={glowStyle}
         ></div>
         <img
