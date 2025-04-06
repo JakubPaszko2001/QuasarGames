@@ -6,7 +6,7 @@ const GameElements = () => {
   const glowStyle = {
     width: '100%',
     height: '120vh',
-    background: 'radial-gradient(circle, rgba(0,27,95,0.8) 0%, rgba(0,0,0,1) 80%)',
+    background: 'radial-gradient(circle, rgba(0,27,95,0.8) 0%, rgba(0,0,0,1) 50%)',
   }
 
   return (

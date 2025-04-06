@@ -1,61 +1,83 @@
-import React, { useState, useRef } from 'react';
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Mousewheel } from 'swiper/modules'
 
-const imageURL =
-  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/484433045_1383213463009991_8171885387272722301_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_ohc=tBE0XOeXGaEQ7kNvgG9vYvW&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD1wEgomG0qoE5iSn_GbuC_hGVJKpZnNImDQKEkuXM3hxaFg&oe=68029065';
+import 'swiper/css'
+import 'swiper/css/mousewheel'
 
-const TOTAL_SLIDES = 7;
+const images = [
+  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
+  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
+  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
+  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
+  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
+  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
+  'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
+]
 
-export default function CustomCarousel() {
-  const [index, setIndex] = useState(0);
-  const isScrolling = useRef(false);
-
-  const handleScroll = (e) => {
-    e.preventDefault();
-    if (isScrolling.current) return;
-    isScrolling.current = true;
-
-    setTimeout(() => {
-      isScrolling.current = false;
-    }, 300);
-
-    if (e.deltaY > 0) {
-      setIndex((prev) => Math.min(prev + 1, TOTAL_SLIDES - 3));
-    } else {
-      setIndex((prev) => Math.max(prev - 1, 0));
-    }
-  };
-
+const Gallery = () => {
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center bg-black">
-      <h1 className="text-5xl text-[#b9935b] kranky-regular md:text-7xl !mb-12">GALLERY</h1>
+    <div className="w-full h-screen bg-black flex flex-col">
+      {/* Tytuł */}
+      <div className="w-full h-1/5 flex justify-center items-center">
+        <h1 className="text-5xl text-[#b9935b] kranky-regular">Gallery</h1>
+      </div>
 
-      <div
-        className="relative w-[300px] h-[600px] overflow-hidden"
-        onWheel={handleScroll}
-        style={{
-          maskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)',
-        }}
-      >
-        <div
-          className="transition-transform duration-500 ease-in-out"
-          style={{
-            transform: `translateY(-${index * 150}px)`,
-          }}
+      {/* Swiper z 3 widocznymi zdjęciami */}
+      <div className="h-4/5 px-10">
+        <Swiper
+          direction="vertical"
+          loop={true}
+          mousewheel={true}
+          centeredSlides={true}
+          slidesPerView={3}
+          speed={700}
+          modules={[Mousewheel]}
+          className="w-full h-full rounded-3xl overflow-hidden"
         >
-          {[...Array(TOTAL_SLIDES)].map((_, i) => (
-            <div
-              key={i}
-              className="h-[250px] -mb-[100px] rounded-xl overflow-hidden shadow-lg"
+          {images.map((src, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex justify-center items-center transition-all duration-700 ease-in-out"
             >
               <img
-                src={imageURL}
-                alt={`slide-${i}`}
-                className="w-full h-full object-cover rounded-xl"
+                src={src}
+                alt={`slide-${index}`}
+                className="w-full h-full object-cover rounded-3xl swiper-slide-img"
               />
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
+
+      {/* Style efektów aktywnego slajdu */}
+<style jsx="true">{`
+  .swiper-slide {
+    filter: blur(2px);
+    opacity: 0.6;
+    scale: 0.85;
+    transition: all 0.5s ease;
+  }
+
+  .swiper-slide-prev {
+    margin-bottom: -50px;
+  }
+
+  .swiper-slide-next {
+    margin-top: -50px;
+  }
+
+  .swiper-slide-active {
+    filter: blur(0px);
+    opacity: 1;
+    scale: 1;
+    margin: 0;
+    z-index: 10;
+  }
+`}</style>
+
     </div>
-  );
+  )
 }
+
+export default Gallery

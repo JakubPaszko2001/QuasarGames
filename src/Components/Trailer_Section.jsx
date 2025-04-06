@@ -37,7 +37,7 @@ const Trailer_Section = () => {
       )}
 
       {/* EMBLEMAT */}
-      <div className="text-center flex justify-center items-center !my-12">
+      <div className="text-center flex justify-center items-center !my-12 !mx-4">
         <img className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
       </div>
 
