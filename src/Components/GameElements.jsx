@@ -31,9 +31,9 @@ const GameElements = () => {
 
       {/* Sekcja elementów gry */}
       <div className="relative z-10 w-full min-h-[30vh] bg-[#4F81FF]/8 border-y border-[#3971FF]/25 rounded-[20px] !px-6 !pb-12 text-white flex flex-col md:my-6 md:rounded-[60px] md:pb-12">
-        <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16">Game Elements</h2>
+        <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16 text-[#FFBF8D]">Game Elements</h2>
         <div className="flex gap-4 text-sm justify-between text-lg md:text-xl pb-8 md:justify-center md:gap-[120px]">
-          <ul className="flex flex-col space-y-1 text-left">
+          <ul className="flex flex-col space-y-1 text-left text-[#FFBF8D]">
             <li>• 4 Pieces of Main Board</li>
             <li>• 4 Lord Standees</li>
             <li>• 4 Citadel Standees</li>
@@ -44,7 +44,7 @@ const GameElements = () => {
             <li>• 8 Diamond Machine Standees</li>
             <li>• 8 Obsidian Machine Standees</li>
           </ul>
-          <ul className="flex flex-col space-y-1 text-left">
+          <ul className="flex flex-col space-y-1 text-left text-[#FFBF8D]">
             <li>• 1 Combat Board</li>
             <li>• 4 Cubes (d6)</li>
             <li>• 20 Mana Tokens</li>
