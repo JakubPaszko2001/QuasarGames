@@ -21,7 +21,13 @@ const Gallery = () => {
     <div className="w-full h-screen bg-black flex flex-col">
       {/* Header */}
       <div className="w-full h-1/5 flex justify-center items-center">
-        <h1 className="text-5xl text-[#b9935b] kranky-regular">Gallery</h1>
+      <h1 className="text-5xl font-bold kranky-regular text-transparent bg-clip-text bg-gradient-to-tr from-[#4F81FF] to-[#b9935b]">
+  GALLERY
+</h1>
+
+
+
+
       </div>
 
       {/* Swiper */}
@@ -109,7 +115,7 @@ const Gallery = () => {
       <style jsx="true">{`
         .swiper-slide {
           filter: blur(2px);
-          opacity: 0.6;
+          opacity: 1;
           scale: 0.85;
           transition: all 0.5s ease;
         }
