@@ -7,6 +7,7 @@ import Trailer_Section from '../Components/Trailer_Section'
 import How_To_Play_Section from '../Components/How_To_Play_Section'
 import Gallery from '../Components/Gallery'
 import QuickInfo from '../Components/QuickInfo'
+import Footer from '../Components/Footer'
 const Main = () => {
   return (
     <main>
@@ -18,6 +19,7 @@ const Main = () => {
       <Trailer_Section />
       <How_To_Play_Section />
       <Gallery />
+      <Footer />
     </main>
   )
 }

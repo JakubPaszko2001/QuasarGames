@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel } from 'swiper/modules'
-
+import Gold_Line from "../assets/Gold_Line.png"
 import 'swiper/css'
 import 'swiper/css/mousewheel'
 
@@ -20,8 +20,10 @@ const Gallery = () => {
   return (
     <div className="w-full h-screen bg-black flex flex-col">
       {/* Header */}
-      <div className="w-full h-1/5 flex justify-center items-center">
+      <div className="w-full h-1/5 flex flex-col justify-center items-center">
+      <img src={Gold_Line} alt="Gold_Line" className='w-[87%] !mb-6' />
       <h1 className="text-5xl font-bold kranky-regular text-[#FFBF8D]">GALLERY</h1>
+      <img src={Gold_Line} alt="Gold_Line" className='w-[87%] !mt-6' />
       </div>
       {/* Swiper */}
       <div className="h-4/5 px-10 flex">
@@ -108,7 +110,7 @@ const Gallery = () => {
       <style jsx="true">{`
         .swiper-slide {
           filter: blur(2px);
-          opacity: 1;
+          opacity: 0;
           scale: 0.85;
           transition: all 0.5s ease;
           z-index: 10;
@@ -117,11 +119,13 @@ const Gallery = () => {
         .swiper-slide-prev {
           margin-bottom: -50px;
           z-index: 20;
+          opacity: 1;
         }
 
         .swiper-slide-next {
           margin-top: -50px;
-           z-index: 20;
+          z-index: 20;
+          opacity: 1;
         }
 
         .swiper-slide-active {
