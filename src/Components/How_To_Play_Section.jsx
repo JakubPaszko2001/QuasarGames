@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import ra from "../assets/ra.webp";
+import ra from "../assets/ra3.webp";
 import emblemat from "../assets/Emblemat_Pustynia.webp";
 import HTP_Background from "../assets/HTP_Background.webp";
 import Play_button from "../assets/play-button.webp";
@@ -69,7 +69,7 @@ const How_To_Play_Section = () => {
       {/* TYTUŁ + IKONY */}
       <div className="!my-12">
         <div className="w-full flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-[#b9935b] kranky-regular md:text-7xl">HOW TO PLAY</h1>
+          <h1 className="text-5xl text-[#FFBF8D] kranky-regular md:text-7xl">HOW TO PLAY</h1>
           <div className="flex !mt-4 !ml-4">
             <div className="flex">
               <img className="w-6 md:w-8" src={ra} alt="ra image" />
@@ -92,7 +92,7 @@ const How_To_Play_Section = () => {
 
       {/* OPIS */}
       <div className="!my-12">
-        <p className="text-[#b9935b] text-lg !px-12 text-center md:text-2xl md:!px-30">
+        <p className="text-[#FFBF8D] text-lg !px-12 text-center md:text-2xl md:!px-30">
         This is a strategic game where players embody themselves as leaders of powerful factions. Gather resources, create new tactics, and uncover magical secrets. Fight against your enemies and free your people from tyranny.
         </p>
       </div>

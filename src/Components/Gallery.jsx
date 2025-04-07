@@ -21,7 +21,7 @@ const Gallery = () => {
     <div className="w-full h-screen bg-black flex flex-col">
       {/* Header */}
       <div className="w-full h-1/5 flex justify-center items-center">
-      <h1 className="text-5xl font-bold kranky-regular text-transparent bg-clip-text bg-gradient-to-tr from-[#4F81FF] to-[#b9935b]">GALLERY</h1>
+      <h1 className="text-5xl font-bold kranky-regular text-[#FFBF8D]">GALLERY</h1>
       </div>
       {/* Swiper */}
       <div className="h-4/5 px-10 flex">
