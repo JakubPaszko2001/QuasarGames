@@ -25,7 +25,7 @@ const Gallery = () => {
       </div>
 
       {/* Swiper */}
-      <div className="h-4/5 px-10">
+      <div className="h-4/5 px-10 flex">
         <Swiper
           direction="vertical"
           loop={true}
@@ -34,18 +34,18 @@ const Gallery = () => {
           slidesPerView={3}
           speed={700}
           modules={[Mousewheel]}
-          className="w-full h-full rounded-3xl overflow-hidden"
+          className="rounded-3xl overflow-hidden"
         >
           {images.map((src, index) => (
             <SwiperSlide
               key={index}
-              className="flex justify-center items-center transition-all duration-700 ease-in-out"
+              className="transition-all duration-700 ease-in-out"
               onClick={() => setSelectedImage(src)}
             >
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="w-full h-full object-cover rounded-2xl cursor-pointer"
+                className="object-cover rounded-2xl cursor-pointer"
               />
             </SwiperSlide>
           ))}
