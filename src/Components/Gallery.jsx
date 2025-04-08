@@ -12,6 +12,7 @@ const images = [
   'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/484433045_1383213463009991_8171885387272722301_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=0zBUrh57yP4Q7kNvwG1DSVf&_nc_oc=AdklfYHnK988SvktmW8OuxTOUS3w1y86o7tw_XNjJKsrvG2XdmRA2Mr0g_mmkYpSmPA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AEYBUjuw6xjWuqkbRtTHrKviQVcJijMRxzsk7KMvjjwPA&oe=681A4B65',
   'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/480942826_528294930307004_8430743161985563023_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lVxEahmvK2wQ7kNvwF7cESQ&_nc_oc=Adm00mI8wF7wC7DWKAA8YkFsdqx1fWdokWqoeop2YwK7ETNCuyWN1moyaE8xXAgww4o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AHrFZOSUTLVxLc41EQ565QRNOhb7r2etHh8dFmk2EoF3Q&oe=681A1BE8',
   'https://scontent-waw2-2.xx.fbcdn.net/v/t1.15752-9/484433045_1383213463009991_8171885387272722301_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=0zBUrh57yP4Q7kNvwG1DSVf&_nc_oc=AdklfYHnK988SvktmW8OuxTOUS3w1y86o7tw_XNjJKsrvG2XdmRA2Mr0g_mmkYpSmPA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&oh=03_Q7cD2AEYBUjuw6xjWuqkbRtTHrKviQVcJijMRxzsk7KMvjjwPA&oe=681A4B65',
+
 ]
 
 const Gallery = () => {
@@ -46,7 +47,7 @@ const Gallery = () => {
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="object-cover rounded-2xl cursor-pointer"
+                className="object-cover rounded-2xl cursor-pointer translate-y-[40px]"
               />
             </SwiperSlide>
           ))}
