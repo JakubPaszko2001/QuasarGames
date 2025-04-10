@@ -37,12 +37,17 @@ const How_To_Play_Section = () => {
       )}
 
       {/* EMBLEMAT */}
-      <div className="text-center flex justify-center items-center !my-12 !mx-4">
+      <div           data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-easing="ease-out-cubic" className="text-center flex justify-center items-center !my-12 !mx-4">
         <img className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
       </div>
 
       {/* MINIATURA Z PRZYCISKIEM */}
       <div
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-easing="ease-out-cubic"
         className="relative w-full max-w-2xl !my-12 cursor-pointer group overflow-hidden"
         onClick={() => setIsModalOpen(true)}
       >
@@ -68,7 +73,9 @@ const How_To_Play_Section = () => {
 
       {/* TYTUŁ + IKONY */}
       <div className="!my-12">
-        <div className="w-full flex flex-col justify-center items-center">
+        <div           data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-easing="ease-out-cubic" className="w-full flex flex-col justify-center items-center">
           <h1 className="text-5xl text-[#FFBF8D] kranky-regular md:text-7xl">HOW TO PLAY</h1>
           <div className="flex !mt-4 !ml-4">
             <div className="flex">
@@ -91,7 +98,9 @@ const How_To_Play_Section = () => {
       </div>
 
       {/* OPIS */}
-      <div className="!my-12">
+      <div           data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-easing="ease-out-cubic" className="!my-12">
         <p className="text-[#FFBF8D] text-lg !px-12 text-center md:text-2xl md:!px-30">
         This is a strategic game where players embody themselves as leaders of powerful factions. Gather resources, create new tactics, and uncover magical secrets. Fight against your enemies and free your people from tyranny.
         </p>

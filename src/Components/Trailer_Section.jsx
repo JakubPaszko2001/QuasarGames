@@ -37,12 +37,17 @@ const Trailer_Section = () => {
       )}
 
       {/* EMBLEMAT */}
-      <div className="text-center flex justify-center items-center !my-12 !mx-4">
+      <div           data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-easing="ease-out-cubic" className="text-center flex justify-center items-center !my-12 !mx-4">
         <img className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
       </div>
 
       {/* MINIATURA Z PRZYCISKIEM */}
-      <div
+      <div 
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-easing="ease-out-cubic"
         className="relative w-full max-w-2xl !my-12 cursor-pointer group overflow-hidden"
         onClick={() => setIsModalOpen(true)}
       >
@@ -68,8 +73,10 @@ const Trailer_Section = () => {
 
       {/* TYTUŁ + IKONY */}
       <div className="!my-12">
-        <div className="w-full flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-[#4F81FF] kranky-regular md:text-8xl">TRAILER</h1>
+        <div           data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-easing="ease-out-cubic" className="w-full flex flex-col justify-center items-center">
+          <h1  className="text-5xl text-[#4F81FF] kranky-regular md:text-8xl">TRAILER</h1>
           <div className="flex !ml-30 !mt-4">
             {[...Array(7)].map((_, i) => (
               <img key={i} className="w-6 md:w-10" src={ra} alt="ra image" />
@@ -80,7 +87,11 @@ const Trailer_Section = () => {
 
       {/* OPIS */}
       <div className="!my-12">
-        <p className="text-[#4F81FF] text-lg !px-12 text-center md:text-2xl md:!px-30">
+        <p
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-easing="ease-out-cubic"
+        className="text-[#4F81FF] text-lg !px-12 text-center md:text-2xl md:!px-30">
           In the endless and desolate deserts of the world, the god Abyss reigns, surrounded by darkness and mystery. It's a place where magic blends with reality, creating a land full of dangers and surprises.
         </p>
       </div>

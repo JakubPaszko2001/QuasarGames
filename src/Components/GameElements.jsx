@@ -19,6 +19,7 @@ const GameElements = () => {
           alt='Game Elements Board'
           data-aos="fade-up"
           data-aos-delay="600"
+          data-aos-easing="ease-out-cubic"
         />
         <div
           className='absolute top-[-72%] left-0 -z-10'
@@ -32,7 +33,9 @@ const GameElements = () => {
       </div>
 
       {/* Sekcja elementów gry */}
-      <div className="relative z-10 w-full min-h-[30vh] bg-[#4F81FF]/8 border-y border-[#3971FF]/25 rounded-[20px] !px-6 !pb-12 text-white flex flex-col md:my-6 md:rounded-[60px] md:pb-12">
+      <div           data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-easing="ease-out-cubic" className="relative z-10 w-full min-h-[30vh] bg-[#4F81FF]/8 border-y border-[#3971FF]/25 rounded-[20px] !px-6 !pb-12 text-white flex flex-col md:my-6 md:rounded-[60px] md:pb-12">
         <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16 text-white">Game Elements</h2>
         <div className="flex gap-4 text-sm justify-between text-lg md:text-xl pb-8 md:justify-center md:gap-[120px]">
           <ul className="flex flex-col space-y-1 text-left text-white">
