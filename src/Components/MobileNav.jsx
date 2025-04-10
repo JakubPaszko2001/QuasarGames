@@ -36,7 +36,7 @@ const MobileNav = () => {
             id="borderParent"
             className="relative w-full h-full flex justify-center items-center"
           >
-            <img className="w-[100px]" src={Logo} alt="Abyss Logo" />
+            <img className="w-[100px]" loading="eager" src={Logo} alt="Abyss Logo" />
           </div>
         </button>
         <button

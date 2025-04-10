@@ -14,6 +14,7 @@ const GameElements = () => {
       {/* Plansza */}
       <div className='w-full min-h-[50vh] relative flex justify-center items-center'>
         <img
+          loading="lazy"
           src={Board}
           className='h-full max-h-screen object-contain z-10 2xl:w-[60%]'
           alt='Game Elements Board'
@@ -23,6 +24,7 @@ const GameElements = () => {
           style={glowStyle}
         ></div>
         <img
+          loading="lazy"
           src={Blur}
           className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 blur-xs'
           alt='Blured Abyss'

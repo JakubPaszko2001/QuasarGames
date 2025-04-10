@@ -38,7 +38,7 @@ const How_To_Play_Section = () => {
 
       {/* EMBLEMAT */}
       <div className="text-center flex justify-center items-center !my-12 !mx-4">
-        <img className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
+        <img loading="lazy" className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
       </div>
 
       {/* MINIATURA Z PRZYCISKIEM */}
@@ -47,6 +47,7 @@ const How_To_Play_Section = () => {
         onClick={() => setIsModalOpen(true)}
       >
         <img
+          loading="lazy"
           src={HTP_Background}
           alt="Miniatura wideo"
           className="w-full transition-opacity duration-700 group-hover:opacity-80"
@@ -61,7 +62,7 @@ const How_To_Play_Section = () => {
         {/* Przycisk Play */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="bg-opacity-50 rounded-full p-4">
-            <img src={Play_button} alt="Play" className="w-8" />
+            <img loading="lazy" src={Play_button} alt="Play" className="w-8" />
           </div>
         </div>
       </div>
@@ -72,19 +73,19 @@ const How_To_Play_Section = () => {
           <h1 className="text-5xl text-[#FFBF8D] kranky-regular md:text-7xl">HOW TO PLAY</h1>
           <div className="flex !mt-4 !ml-4">
             <div className="flex">
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
             </div>
             <div className="flex !mx-10">
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
             </div>
             <div className="flex">
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
-              <img className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
+              <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />
             </div>
           </div>
         </div>

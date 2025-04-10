@@ -38,7 +38,7 @@ const Trailer_Section = () => {
 
       {/* EMBLEMAT */}
       <div className="text-center flex justify-center items-center !my-12 !mx-4">
-        <img className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
+        <img loading="lazy" className="md:w-3/4" src={emblemat} alt="Robot Emblemat image" />
       </div>
 
       {/* MINIATURA Z PRZYCISKIEM */}
@@ -47,6 +47,7 @@ const Trailer_Section = () => {
         onClick={() => setIsModalOpen(true)}
       >
         <img
+          loading="lazy"
           src={Main_Background}
           alt="Miniatura wideo"
           className="w-full transition-opacity duration-700 group-hover:opacity-80"
@@ -61,7 +62,7 @@ const Trailer_Section = () => {
         {/* Przycisk Play */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="bg-opacity-50 rounded-full p-4">
-            <img src={Play_button} alt="Play" className="w-8" />
+            <img loading="lazy" src={Play_button} alt="Play" className="w-8" />
           </div>
         </div>
       </div>
@@ -72,7 +73,7 @@ const Trailer_Section = () => {
           <h1 className="text-5xl text-[#4F81FF] kranky-regular md:text-8xl">TRAILER</h1>
           <div className="flex !ml-30 !mt-4">
             {[...Array(7)].map((_, i) => (
-              <img key={i} className="w-6 md:w-10" src={ra} alt="ra image" />
+              <img loading="lazy" key={i} className="w-6 md:w-10" src={ra} alt="ra image" />
             ))}
           </div>
         </div>
