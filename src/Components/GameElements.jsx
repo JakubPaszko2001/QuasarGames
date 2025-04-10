@@ -22,6 +22,7 @@ const GameElements = () => {
           className='h-full max-h-screen object-contain z-10 2xl:w-[60%]'
           alt='Game Elements Board'
           data-aos="fade-up"
+          data-aos-anchor-placement="bottom"
         />
         <div
           className='absolute top-[-72%] left-0 -z-10'
