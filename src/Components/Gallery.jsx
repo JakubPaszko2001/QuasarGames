@@ -16,9 +16,9 @@ const Gallery = () => {
     <div className="w-full h-screen bg-black flex flex-col">
       {/* Header */}
       <div className="w-full h-1/5 flex flex-col justify-center items-center">
-        <img src={Gold_Line} alt="Gold_Line" className='w-[87%] !mb-6' />
+        <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='w-[87%] !mb-6' />
         <h1 className="text-5xl font-bold kranky-regular text-[#FFBF8D]">GALLERY</h1>
-        <img src={Gold_Line} alt="Gold_Line" className='w-[87%] !mt-6' />
+        <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='w-[87%] !mt-6' />
       </div>
 
       {/* Swiper */}
@@ -40,6 +40,7 @@ const Gallery = () => {
               onClick={() => setSelectedImage(src)}
             >
               <img
+                loading="lazy"
                 src={src}
                 alt={`slide-${index}`}
                 className="object-cover rounded-2xl cursor-pointer translate-y-[40px]"
@@ -91,6 +92,7 @@ const Gallery = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <img
+              loading="lazy"
               src={selectedImage}
               alt="modal"
               className="max-h-[90vh] max-w-full object-contain rounded-xl shadow-xl"
