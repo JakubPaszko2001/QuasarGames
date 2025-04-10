@@ -41,7 +41,6 @@ const Gallery = () => {
             >
               <img
                 src={src}
-                loading="lazy"
                 alt={`slide-${index}`}
                 className="object-cover rounded-2xl cursor-pointer translate-y-[40px]"
               />
