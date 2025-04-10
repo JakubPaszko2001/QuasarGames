@@ -15,7 +15,6 @@ const NavUl = ({ menuOpen }) => {
               tabIndex={menuOpen === true ? 0 : -1}
               href={`#${item.name}`}
               rel="noreferrer"
-              className="underlineText flex"
             >
               {item.name}
             </a>

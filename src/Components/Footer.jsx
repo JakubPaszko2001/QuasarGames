@@ -10,9 +10,9 @@ const Footer = () => {
         "At the edge of the forgotten sands, the god Abyss watches in silence."
         </p>
         <div className='flex w-full justify-center items-center gap-2 !my-8'>
-            <img src={instagram} alt="instagram" className='h-[30px]' />
-            <img src={youtube} alt="youtube" className='h-[30px]' />
-            <img src={facebook} alt="facebook" className='h-[30px]'/>
+            <img loading='lazy' src={instagram} alt="instagram" className='h-[30px]' />
+            <img loading='lazy' src={youtube} alt="youtube" className='h-[30px]' />
+            <img loading='lazy' src={facebook} alt="facebook" className='h-[30px]'/>
         </div>
     </div>
   )
