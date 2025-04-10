@@ -5,7 +5,7 @@ import { IoMdTime } from "react-icons/io";
 
 const QuickInfo = () => {
   return (
-<div data-aos="fade" data-aos-delay="300" className='w-full flex justify-between md:justify-around text-white !px-8 !mt-8 md:!my-12 xl:hidden lg:!my-0'>
+<div className='w-full flex justify-between md:justify-around text-white !px-8 !mt-8 md:!my-12 xl:hidden lg:!my-0'>
         <div className='flex flex-col items-center'>
             <PiUserBold className='text-[3rem] md:text-[4rem]' />
             <h1 className='md:text-lg'>+14</h1>

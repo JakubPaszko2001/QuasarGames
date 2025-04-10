@@ -8,12 +8,8 @@ import How_To_Play_Section from '../Components/How_To_Play_Section'
 import Gallery from '../Components/Gallery'
 import QuickInfo from '../Components/QuickInfo'
 import Footer from '../Components/Footer'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Main = () => {
-
-  AOS.init();
   return (
     <main>
       <Navbar />

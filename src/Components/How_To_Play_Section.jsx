@@ -68,10 +68,7 @@ const How_To_Play_Section = () => {
 
       {/* TYTUŁ + IKONY */}
       <div className="!my-12">
-        <div                 data-aos="fade-up"
-      data-aos-delay="300"
-      data-aos-duration="1000"
-                data-aos-easing="ease-out-cubic" className="w-full flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center">
           <h1 className="text-5xl text-[#FFBF8D] kranky-regular md:text-7xl">HOW TO PLAY</h1>
           <div className="flex !mt-4 !ml-4">
             <div className="flex">
@@ -95,10 +92,6 @@ const How_To_Play_Section = () => {
 
       {/* OPIS */}
       <div
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1000"
-                          data-aos-easing="ease-out-cubic"
       className="!my-12">
         <p className="text-[#FFBF8D] text-lg !px-12 text-center md:text-2xl md:!px-30">
         This is a strategic game where players embody themselves as leaders of powerful factions. Gather resources, create new tactics, and uncover magical secrets. Fight against your enemies and free your people from tyranny.
