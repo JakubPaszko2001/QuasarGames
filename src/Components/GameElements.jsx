@@ -1,8 +1,6 @@
 import React from 'react'
 import Board from '../assets/Game-Elements.webp'
 import Blur from '../assets/Blur.webp'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const GameElements = () => {
   const glowStyle = {
@@ -10,8 +8,6 @@ const GameElements = () => {
     height: '120vh',
     background: 'radial-gradient(circle, rgba(0,27,95,0.8) 0%, rgba(0,0,0,1) 50%)',
   }
-
-  AOS.init();
 
   return (
     <div className='w-full flex flex-col justify-start items-center relative'>
@@ -22,7 +18,7 @@ const GameElements = () => {
           className='h-full max-h-screen object-contain z-10 2xl:w-[60%]'
           alt='Game Elements Board'
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom"
+          data-aos-delay="300"
         />
         <div
           className='absolute top-[-72%] left-0 -z-10'
