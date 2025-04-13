@@ -8,6 +8,7 @@ import How_To_Play_Section from '../Components/How_To_Play_Section'
 import Gallery from '../Components/Gallery'
 import QuickInfo from '../Components/QuickInfo'
 import Footer from '../Components/Footer'
+import Gold_Line from "../assets/Gold_Line.png"
 
 const Main = () => {
   return (
@@ -17,8 +18,11 @@ const Main = () => {
       <Kick />
       <QuickInfo />
       <GameElements />
+      <div className='lg:flex relative'>
+      <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='absolute w-1/2 rotate-90 top-1/2 left-1/2 -translate-x-1/2' />
       <Trailer_Section />
       <How_To_Play_Section />
+      </div>
       <Gallery />
       <Footer />
     </main>

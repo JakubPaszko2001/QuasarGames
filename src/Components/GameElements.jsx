@@ -1,6 +1,7 @@
 import React from 'react'
 import Board from '../assets/Game-Elements.webp'
 import Blur from '../assets/Blur.webp'
+import bg from '../assets/rewers_pudełko.png'
 
 const GameElements = () => {
   const glowStyle = {
@@ -11,52 +12,59 @@ const GameElements = () => {
 
   return (
     <div className='w-full flex flex-col justify-start items-center relative'>
+      {/* <div className='absolute top-0 w-full h-[10vh] bg-gradient-to-t from-transparent to-black '></div> */}
+      <div className='absolute bottom-1/2 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
       {/* Plansza */}
-      <div className='w-full min-h-[50vh] relative flex justify-center items-center'>
+      <div className='w-full min-h-[50vh] relative flex justify-center items-center xl:min-h-[100vh]'>
         <img
           loading="lazy"
           src={Board}
-          className='h-full max-h-screen object-contain z-10 2xl:w-[60%]'
+          className='h-full max-h-screen object-contain z-10 lg:w-[60%]'
           alt='Game Elements Board'
         />
         <div
-          className='absolute top-[-72%] left-0 -z-10'
+          className='absolute top-[-72%] left-0 -z-10 xl:top-[-7%]'
           style={glowStyle}
         ></div>
         <img
           loading="lazy"
           src={Blur}
-          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 blur-xs'
+          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 blur-xs xl:w-[60vw] xl:blur-[1px]'
           alt='Blured Abyss'
         />
       </div>
 
       {/* Sekcja elementów gry */}
-      <div className="relative z-10 w-full min-h-[30vh] bg-[#4F81FF]/8 border-y border-[#3971FF]/25 rounded-[20px] !px-6 !pb-12 text-white flex flex-col md:my-6 md:rounded-[60px] md:pb-12">
-        <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16 text-white">Game Elements</h2>
-        <div className="flex gap-4 text-sm justify-between text-lg md:text-xl pb-8 md:justify-center md:gap-[120px]">
-          <ul className="flex flex-col space-y-1 text-left text-white">
-            <li>• 4 Pieces of Main Board</li>
-            <li>• 4 Lord Standees</li>
-            <li>• 4 Citadel Standees</li>
-            <li>• 8 Barracks Standees</li>
-            <li>• 12 Wood Machine Standees</li>
-            <li>• 8 Stone Machine Standees</li>
-            <li>• 12 Gold Machine Standees</li>
-            <li>• 8 Diamond Machine Standees</li>
-            <li>• 8 Obsidian Machine Standees</li>
-          </ul>
-          <ul className="flex flex-col space-y-1 text-left text-white">
-            <li>• 1 Combat Board</li>
-            <li>• 4 Cubes (d6)</li>
-            <li>• 20 Mana Tokens</li>
-            <li>• 100 Attack Tokens</li>
-            <li>• 100 Health Tokens</li>
-            <li>• 208 Combat Cards</li>
-            <li>• 28 Monster Cards</li>
-            <li>• 134 Materials Cards</li>
-            <li>• 100 Random Cards</li>
-          </ul>
+      <div className='relative w-full xl:h-screen flex justify-center items-center'>
+      <div className='absolute top-0 w-full h-[30vh] bg-gradient-to-t from-transparent to-black '></div>
+      <div className='absolute bottom-0 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
+        <img src={bg} className='hidden lg:flex absolute top-0 left-0 -z-10 w-full h-full object-cover' alt='Background' />
+        <div className="relative z-10 w-full min-h-[30vh] bg-[#4F81FF]/10 lg:bg-black/40 lg:border-[1px] lg:border-white/20 border-[#3971FF]/25 lg:border-gray-500 rounded-[20px] md:rounded-[60px] lg:rounded-[10px] !px-6 !pb-12 md:pb-12 text-white flex flex-col md:my-6 xl:w-2/3 lg:min-h-[70vh] backdrop-blur-md shadow-[0_0_23px_9px_rgba(255,255,255,0.1)]"        >
+          <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16 text-white">Game Elements</h2>
+          <div className="flex gap-4 text-sm justify-between text-lg md:text-xl pb-8 md:justify-center md:gap-[120px]">
+            <ul className="flex flex-col space-y-1 text-left text-white">
+              <li>• 4 Pieces of Main Board</li>
+              <li>• 4 Lord Standees</li>
+              <li>• 4 Citadel Standees</li>
+              <li>• 8 Barracks Standees</li>
+              <li>• 12 Wood Machine Standees</li>
+              <li>• 8 Stone Machine Standees</li>
+              <li>• 12 Gold Machine Standees</li>
+              <li>• 8 Diamond Machine Standees</li>
+              <li>• 8 Obsidian Machine Standees</li>
+            </ul>
+            <ul className="flex flex-col space-y-1 text-left text-white">
+              <li>• 1 Combat Board</li>
+              <li>• 4 Cubes (d6)</li>
+              <li>• 20 Mana Tokens</li>
+              <li>• 100 Attack Tokens</li>
+              <li>• 100 Health Tokens</li>
+              <li>• 208 Combat Cards</li>
+              <li>• 28 Monster Cards</li>
+              <li>• 134 Materials Cards</li>
+              <li>• 100 Random Cards</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

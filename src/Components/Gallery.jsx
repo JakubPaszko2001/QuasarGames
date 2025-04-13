@@ -6,7 +6,7 @@ import 'swiper/css'
 import 'swiper/css/mousewheel'
 
 // Vite: dynamiczny import wszystkich obrazów z folderu gallery
-const imageModules = import.meta.glob('../assets/gallery/*.{jpg,jpeg,png,svg}', { eager: true })
+const imageModules = import.meta.glob('../assets/gallery/*.{jpg,jpeg,png,svg,webp}', { eager: true })
 const images = Object.values(imageModules).map((mod) => mod.default)
 
 const Gallery = () => {
@@ -16,9 +16,9 @@ const Gallery = () => {
     <div className="w-full h-screen bg-black flex flex-col">
       {/* Header */}
       <div className="w-full h-1/5 flex flex-col justify-center items-center">
-        <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='w-[87%] !mb-6' />
-        <h1 className="text-5xl font-bold kranky-regular text-[#FFBF8D]">GALLERY</h1>
-        <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='w-[87%] !mt-6' />
+        <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='w-[87%] !mb-6 lg:hidden' />
+        <h1 className="text-5xl font-bold kranky-regular text-[#FFBF8D] md:text-7xl">GALLERY</h1>
+        <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='w-[87%] !mt-6 lg:hidden' />
       </div>
 
       {/* Swiper */}
@@ -45,6 +45,8 @@ const Gallery = () => {
                 alt={`slide-${index}`}
                 className="object-cover rounded-2xl cursor-pointer translate-y-[40px]"
               />
+              {/* <img  loading="lazy"  src={src}  alt={`slide-${index}`}  className="object-cover rounded-2xl cursor-pointer translate-y-[40px] lg:max-h-[300px] lg:w-auto"/> */}
+
             </SwiperSlide>
           ))}
         </Swiper>
@@ -92,7 +94,7 @@ const Gallery = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              loading="lazy"
+              // loading="lazy"
               src={selectedImage}
               alt="modal"
               className="max-h-[90vh] max-w-full object-contain rounded-xl shadow-xl"
