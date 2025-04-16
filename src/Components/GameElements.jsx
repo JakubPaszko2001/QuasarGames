@@ -13,9 +13,9 @@ const GameElements = () => {
   return (
     <div className='w-full flex flex-col justify-start items-center relative'>
       {/* <div className='absolute top-0 w-full h-[10vh] bg-gradient-to-t from-transparent to-black '></div> */}
-      <div className='absolute bottom-1/2 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
+      <div className='hidden xl:flex absolute bottom-1/2 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
       {/* Plansza */}
-      <div className='w-full min-h-[50vh] relative flex justify-center items-center xl:min-h-[100vh]'>
+      <div className='w-full min-h-[50vh] relative flex justify-center items-center lg:min-h-[60vh] xl:min-h-[100vh]'>
         <img
           loading="lazy"
           src={Board}
@@ -23,7 +23,7 @@ const GameElements = () => {
           alt='Game Elements Board'
         />
         <div
-          className='absolute top-[-72%] left-0 -z-10 xl:top-[-7%]'
+          className='absolute top-[-72%] left-0 -z-10 lg:top-[-7%]'
           style={glowStyle}
         ></div>
         <img
@@ -36,10 +36,12 @@ const GameElements = () => {
 
       {/* Sekcja elementów gry */}
       <div className='relative w-full xl:h-screen flex justify-center items-center'>
-      <div className='absolute top-0 w-full h-[30vh] bg-gradient-to-t from-transparent to-black '></div>
-      <div className='absolute bottom-0 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
-        <img src={bg} className='hidden lg:flex absolute top-0 left-0 -z-10 w-full h-full object-cover' alt='Background' />
-        <div className="relative z-10 w-full min-h-[30vh] bg-[#4F81FF]/10 lg:bg-black/40 lg:border-[1px] lg:border-white/20 border-[#3971FF]/25 lg:border-gray-500 rounded-[20px] md:rounded-[60px] lg:rounded-[10px] !px-6 !pb-12 md:pb-12 text-white flex flex-col md:my-6 xl:w-2/3 lg:min-h-[70vh] backdrop-blur-md shadow-[0_0_23px_9px_rgba(255,255,255,0.1)]"        >
+      <div className='hidden lg:flex absolute z-20 bottom-0 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
+      <div className='hidden lg:flex absolute z-20 top-0 w-full h-[30vh] bg-gradient-to-t from-transparent to-black '></div>
+      <div className="absolute inset-0 z-20 pointer-events-none bg-[radial-gradient(circle,_transparent_0%,_#000000_100%)]"></div>
+        <img src={bg} className='hidden lg:flex absolute z-10 top-0 left-0 -z-10 w-full h-full object-cover' alt='Background' />
+        <div className="absolute inset-0 z-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_30%,_rgba(0,0,0,0.85)_100%)]"></div>
+        <div className="relative z-30 w-full min-h-[30vh] bg-[#4F81FF]/10 lg:bg-black/40 lg:border-[1px] lg:border-white/20 border-[#3971FF]/25 lg:border-gray-500 rounded-[20px] md:rounded-[60px] lg:rounded-[10px] !px-6 !pb-12 md:pb-12 text-white flex flex-col md:my-6 xl:w-2/3 lg:min-h-[70vh] backdrop-blur-md shadow-[0_0_23px_9px_rgba(255,255,255,0.1)]"        >
           <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16 text-white">Game Elements</h2>
           <div className="flex gap-4 text-sm justify-between text-lg md:text-xl pb-8 md:justify-center md:gap-[120px]">
             <ul className="flex flex-col space-y-1 text-left text-white">

@@ -39,13 +39,13 @@ const Gallery = () => {
               className="transition-all duration-700 ease-in-out"
               onClick={() => setSelectedImage(src)}
             >
-              <img
+              {/* <img
                 loading="lazy"
                 src={src}
                 alt={`slide-${index}`}
                 className="object-cover rounded-2xl cursor-pointer translate-y-[40px]"
-              />
-              {/* <img  loading="lazy"  src={src}  alt={`slide-${index}`}  className="object-cover rounded-2xl cursor-pointer translate-y-[40px] lg:max-h-[300px] lg:w-auto"/> */}
+              /> */}
+              <img  loading="lazy"  src={src}  alt={`slide-${index}`}  className="object-cover rounded-2xl cursor-pointer translate-y-[40px] lg:max-h-[300px] lg:w-auto"/>
 
             </SwiperSlide>
           ))}

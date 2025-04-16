@@ -19,7 +19,7 @@ const Main = () => {
       <QuickInfo />
       <GameElements />
       <div className='lg:flex relative'>
-      <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='absolute w-1/2 rotate-90 top-1/2 left-1/2 -translate-x-1/2' />
+      <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='hidden 2xl:flex absolute w-1/2 rotate-90 top-1/2 left-1/2 -translate-x-1/2 w-[30%]' />
       <Trailer_Section />
       <How_To_Play_Section />
       </div>
