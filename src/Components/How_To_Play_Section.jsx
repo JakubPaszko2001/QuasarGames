@@ -94,7 +94,7 @@ const How_To_Play_Section = () => {
       {/* OPIS */}
       <div
       className="!my-12">
-        <p className="text-[#FFBF8D] text-lg !px-12 text-center md:text-2xl md:!px-30">
+        <p className="text-[#FFBF8D] text-lg !px-12 text-center md:text-2xl md:!px-30 lg:!px-20">
         This is a strategic game where players embody themselves as leaders of powerful factions. Gather resources, create new tactics, and uncover magical secrets. Fight against your enemies and free your people from tyranny.
         </p>
       </div>

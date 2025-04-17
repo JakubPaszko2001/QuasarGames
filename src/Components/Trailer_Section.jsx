@@ -81,7 +81,7 @@ const Trailer_Section = () => {
 
       {/* OPIS */}
       <div className="!my-12">
-        <p className="text-[#4F81FF] text-lg !px-12 text-center md:text-2xl md:!px-30">
+        <p className="text-[#4F81FF] text-lg !px-12 text-center md:text-2xl md:!px-30 lg:!px-20">
           In the endless and desolate deserts of the world, the god Abyss reigns, surrounded by darkness and mystery. It's a place where magic blends with reality, creating a land full of dangers and surprises.
         </p>
       </div>
