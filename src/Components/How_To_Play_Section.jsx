@@ -70,7 +70,7 @@ const How_To_Play_Section = () => {
       {/* TYTUŁ + IKONY */}
       <div className="!my-12">
         <div className="w-full flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-[#FFBF8D] kranky-regular md:text-8xl">HOW TO PLAY</h1>
+          <h1 className="text-5xl text-[#FFBF8D] kranky-regular md:text-7xl">HOW TO PLAY</h1>
           <div className="flex !mt-4 !ml-4">
             <div className="flex">
               <img loading="lazy" className="w-6 md:w-8" src={ra} alt="ra image" />

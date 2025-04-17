@@ -70,7 +70,7 @@ const Trailer_Section = () => {
       {/* TYTUŁ + IKONY */}
       <div className="!my-12">
         <div className="w-full flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-[#4F81FF] kranky-regular md:text-8xl">TRAILER</h1>
+          <h1 className="text-5xl text-[#4F81FF] kranky-regular md:text-7xl">TRAILER</h1>
           <div className="flex !ml-30 !mt-4">
             {[...Array(7)].map((_, i) => (
               <img loading="lazy" key={i} className="w-6 md:w-10" src={ra} alt="ra image" />
