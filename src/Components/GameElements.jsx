@@ -36,15 +36,15 @@ const GameElements = () => {
 
       {/* Sekcja elementów gry */}
       <div className='relative w-full xl:h-screen flex justify-center items-center'>
-      <div className='hidden lg:flex absolute z-20 bottom-0 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
-      <div className='hidden lg:flex absolute z-20 top-0 w-full h-[30vh] bg-gradient-to-t from-transparent to-black '></div>
-      <div className="absolute inset-0 z-20 pointer-events-none bg-[radial-gradient(circle,_transparent_0%,_#000000_100%)]"></div>
-        <img src={bg} className='hidden lg:flex absolute z-10 top-0 left-0 -z-10 w-full h-full object-cover' alt='Background' />
-        <div className="absolute inset-0 z-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_30%,_rgba(0,0,0,0.85)_100%)]"></div>
-        <div className="relative z-30 w-full min-h-[30vh] bg-[#4F81FF]/10 lg:bg-black/40 lg:border-[1px] lg:border-white/20 border-[#3971FF]/25 lg:border-gray-500 rounded-[20px] md:rounded-[60px] lg:rounded-[10px] !px-6 !pb-12 md:pb-12 text-white flex flex-col md:my-6 xl:w-2/3 lg:min-h-[70vh] backdrop-blur-md shadow-[0_0_23px_9px_rgba(255,255,255,0.1)]"        >
-          <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16 text-white">Game Elements</h2>
+        <div className='hidden lg:flex absolute z-20 bottom-0 w-full h-[20vh] bg-gradient-to-t from-black to-transparent '></div>
+        <div className='hidden lg:flex absolute z-20 top-0 w-full h-[20vh] bg-gradient-to-t from-transparent to-black '></div>
+        {/* <div className="absolute inset-0 z-20 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_10%,_rgba(0,0,0,0.85)_200%)]"></div> */}
+        <div className="absolute inset-0 z-20 pointer-events-none bg-[radial-gradient(circle,_transparent_0%,_#000000_200%)]"></div>
+        <img src={bg} className='lg:flex absolute z-10 top-0 left-0 -z-10 w-full h-full object-cover rounded-[60px]' alt='Background' />
+        <div className="relative z-30 w-full min-h-[30vh] bg-[#4F81FF]/10 bg-black/40 border-[1px] border-white/20 border-[#3971FF]/25 border-gray-500 rounded-[20px] md:rounded-[60px] lg:rounded-[10px] !px-6 !pb-12 md:pb-12 text-white flex flex-col lg:justify-center md:my-6 xl:w-2/3 lg:min-h-[70vh] backdrop-blur-md shadow-[0_0_23px_9px_rgba(255,255,255,0.1)]">
+        <h2 className="text-center text-2xl font-serif !py-8 md:text-5xl md:py-16 text-white lg:text-6xl">Game Elements</h2>
           <div className="flex gap-4 text-sm justify-between text-lg md:text-xl pb-8 md:justify-center md:gap-[120px]">
-            <ul className="flex flex-col space-y-1 text-left text-white">
+            <ul className="flex flex-col space-y-1 text-left text-white lg:text-2xl lg:!mt-22">
               <li>• 4 Pieces of Main Board</li>
               <li>• 4 Lord Standees</li>
               <li>• 4 Citadel Standees</li>
@@ -55,7 +55,7 @@ const GameElements = () => {
               <li>• 8 Diamond Machine Standees</li>
               <li>• 8 Obsidian Machine Standees</li>
             </ul>
-            <ul className="flex flex-col space-y-1 text-left text-white">
+            <ul className="flex flex-col space-y-1 text-left text-white lg:text-2xl lg:!mt-22">
               <li>• 1 Combat Board</li>
               <li>• 4 Cubes (d6)</li>
               <li>• 20 Mana Tokens</li>
