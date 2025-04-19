@@ -8,17 +8,17 @@ const DesktopNav = () => {
     let lastScrollY = window.scrollY;
     window.addEventListener("scroll", () => {
       if (lastScrollY < window.scrollY) {
-        nav.classList.add("-translate-y-[100%]");
+        nav.classList.add("-translate-x-[100%]");
       } else {
-        nav.classList.remove("-translate-y-[100%]");
+        nav.classList.remove("-translate-x-[100%]");
       }
 
       lastScrollY = window.scrollY;
     });
   });
   return (
-    <nav className="hidden fixed top-0 left-0 xl:block z-50">
-      <div className="navbar flex w-screen h-36 px-10 bg-light dark:bg-dark transition-transform duration-300">
+    <nav className="hidden fixed top-1/2 -translate-y-1/2 left-0 xl:block z-50">
+      <div className="navbar flex flex-col justify-center items-center w-full h-[60vh] px-10 bg-black/10 rounded-br-xl rounded-tr-xl border-y-1 border-gray-500 backdrop-blur-md transition-transform duration-300">
         <Icons menuOpen={menuOpen} />
         <NavUl menuOpen={menuOpen} />
       </div>

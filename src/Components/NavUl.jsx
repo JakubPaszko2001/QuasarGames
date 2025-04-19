@@ -1,14 +1,14 @@
 const NavUl = ({ menuOpen }) => {
   const liMenu = [
-    { name: "About", span: true },
-    { name: "Abyss World", span: true },
-    { name: "Galery", span: true },
-    { name: "Contact", span: false },
+    { name: "Game Elements", span: true },
+    { name: "Trailer", span: true },
+    { name: "How to play", span: true },
+    { name: "Gallery", span: false },
   ];
 
   return (
     <>
-      <ul className="w-full h-full flex flex-col xl:flex-row justify-center xl:justify-end items-center gap-8 text-3xl md:text-4xl text-white">
+      <ul className="w-full h-full flex flex-col justify-center items-center gap-8 text-3xl md:text-4xl xl:text-lg text-white">
         {liMenu.map((item) => (
           <li key={item.name}>
             <a
