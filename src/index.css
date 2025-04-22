@@ -40,3 +40,17 @@ html {
   font-weight: 400;
   font-style: normal;
 }
+@layer utilities {
+  @keyframes scrollDot {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1.2rem);
+    }
+  }
+
+  .animate-scrollDot {
+    animation: scrollDot 1.6s ease-in-out infinite;
+  }
+}
