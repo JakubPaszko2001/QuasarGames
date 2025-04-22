@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import NavUl from "./NavUl";
 import Icons from "./Icons";
 const DesktopNav = () => {
   const menuOpen = true;
@@ -8,19 +7,22 @@ const DesktopNav = () => {
     let lastScrollY = window.scrollY;
     window.addEventListener("scroll", () => {
       if (lastScrollY < window.scrollY) {
-        nav.classList.add("-translate-x-[100%]");
+        nav.classList.add("-translate-y-[100%]");
       } else {
-        nav.classList.remove("-translate-x-[100%]");
+        nav.classList.remove("-translate-y-[100%]");
       }
 
       lastScrollY = window.scrollY;
     });
   });
   return (
-    <nav className="hidden fixed top-1/2 -translate-y-1/2 left-0 xl:block z-50">
-      <div className="navbar flex flex-col justify-center items-center w-full h-[60vh] px-10 bg-black/10 rounded-br-xl rounded-tr-xl border-y-1 border-gray-500 backdrop-blur-md transition-transform duration-300 !px-4">
+    <nav className="hidden fixed top-0 left-1/2 -translate-x-1/2 xl:block z-50">
+      <div className="navbar flex flex-col xl:flex-row justify-around items-center w-[50vw] h-[10vh] px-10 bg-black/10 rounded-br-xl rounded-bl-xl border-b-1 border-gray-500 backdrop-blur-md transition-transform duration-300 !px-4 text-white text-lg">
+        <a className="cursor-pointer">Game Elements</a>
+        <a className="cursor-pointer">Trailer</a>
         <Icons menuOpen={menuOpen} />
-        <NavUl menuOpen={menuOpen} />
+        <a className="cursor-pointer">How to play</a>
+        <a className="cursor-pointer">Gallery</a>
       </div>
     </nav>
   );

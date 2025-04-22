@@ -8,7 +8,7 @@ const NavUl = ({ menuOpen }) => {
 
   return (
     <>
-      <ul className="w-full h-full flex flex-col justify-center items-center gap-8 text-3xl md:text-4xl xl:text-lg text-white">
+      <ul className="w-full h-full flex flex-col xl:flex-row justify-center items-center gap-8 text-3xl md:text-4xl xl:text-lg text-white">
         {liMenu.map((item) => (
           <li key={item.name}>
             <a

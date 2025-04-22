@@ -39,7 +39,7 @@ const GameElements = () => {
         <div className='hidden lg:flex absolute z-20 bottom-0 w-full h-[20vh] bg-gradient-to-t from-black to-transparent '></div>
         <div className='hidden lg:flex absolute z-20 top-0 w-full h-[20vh] bg-gradient-to-t from-transparent to-black '></div>
         {/* <div className="absolute inset-0 z-20 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_10%,_rgba(0,0,0,0.85)_200%)]"></div> */}
-        <div className="absolute inset-0 z-20 pointer-events-none bg-[radial-gradient(circle,_transparent_0%,_#000000_200%)]"></div>
+        <div className="absolute inset-0 z-20 pointer-events-none bg-[radial-gradient(circle,_transparent_0%,_#000000_400%)]"></div>
         <img src={bg} className='lg:flex absolute z-10 top-0 left-0 -z-10 w-full h-full object-cover rounded-[60px]' alt='Background' />
         <div className="relative z-30 w-full min-h-[30vh] bg-[#4F81FF]/10 bg-black/40 border-y-[1px] lg:border-x-[1px] border-white/20 border-[#3971FF]/25 border-gray-500 rounded-[20px] md:rounded-[60px] lg:rounded-[10px] !px-6 !pb-12 md:pb-12 text-white flex flex-col md:my-6 xl:w-2/3 lg:min-h-[60vh] xl:min-h-[70vh] backdrop-blur-md shadow-[0_0_23px_9px_rgba(255,255,255,0.1)]">
         <h2 className="text-center text-2xl font-serif md:text-5xl lg:text-5xl xl:text-6xl h-[10vh] lg:h-[20vh] flex items-center justify-center">Game Elements</h2>
