@@ -37,7 +37,7 @@ const Main_Page = () => {
       <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-black/90 to-transparent xl:hidden"></div>
 
       {/* SCROLL DOWN animation */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center">
+        <div className="absolute bottom-28 xl:bottom-6 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center">
       {/* Myszka */}
           <div className="w-8 h-14 border-2 border-white rounded-full flex justify-center items-start p-1 mb-3">
             <div className="w-2 h-2 rounded-full bg-white animate-scrollDot" />
