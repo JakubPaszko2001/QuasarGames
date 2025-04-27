@@ -10,7 +10,7 @@ const How_To_Play_Section = () => {
   const videoId = "2LPd07zzT9g&t"; // Poprawiony ID wideo
 
   return (
-    <div className="flex flex-col w-full items-center justify-center relative">
+    <div id="how-to-play" className="flex flex-col w-full items-center justify-center relative">
       {/* MODAL */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">

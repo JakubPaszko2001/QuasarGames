@@ -11,7 +11,7 @@ const GameElements = () => {
   }
 
   return (
-    <div className='w-full flex flex-col justify-start items-center relative'>
+    <div id="game-elements" className='w-full flex flex-col justify-start items-center relative'>
       {/* <div className='absolute top-0 w-full h-[10vh] bg-gradient-to-t from-transparent to-black '></div> */}
       <div className='hidden xl:flex absolute bottom-1/2 w-full h-[30vh] bg-gradient-to-t from-black to-transparent '></div>
       {/* Plansza */}

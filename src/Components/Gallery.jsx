@@ -23,7 +23,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className="w-full h-screen bg-black flex flex-col">
+    <div id='gallery' className="w-full h-screen bg-black flex flex-col">
       {/* Header */}
       <div className="w-full h-1/5 flex flex-col justify-center items-center">
         <img loading='lazy' src={Gold_Line} alt="Gold_Line" className='w-[87%] !mb-6 lg:hidden' />

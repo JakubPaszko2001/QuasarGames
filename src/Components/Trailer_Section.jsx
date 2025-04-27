@@ -10,7 +10,7 @@ const Trailer_Section = () => {
   const videoId = "Sbr0_bkzPB8"; // Poprawiony ID wideo
 
   return (
-    <div className="flex flex-col w-full items-center justify-center relative">
+    <div id="trailer" className="flex flex-col w-full items-center justify-center relative">
       {/* MODAL */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">

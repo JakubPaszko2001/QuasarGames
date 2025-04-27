@@ -19,7 +19,7 @@ const Main_Page = () => {
   const selectedPoster = isLargeScreen ? Main_Background : Stop_Klatka;
 
   return (
-    <div className="relative inset-0 w-full h-screen flex justify-center items-center">
+    <div id="main-page" className="relative inset-0 w-full h-screen flex justify-center items-center">
       <video
         className="w-full h-full object-cover"
         autoPlay
