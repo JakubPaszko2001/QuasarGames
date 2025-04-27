@@ -1,9 +1,9 @@
-const NavUl = ({ menuOpen }) => {
+const NavUl = ({ menuOpen, handleClose }) => {
   const liMenu = [
-    { name: "Game Elements", span: true },
-    { name: "Trailer", span: true },
-    { name: "How to play", span: true },
-    { name: "Gallery", span: false },
+    { name: "Game Elements", span: true, ref: "game-elements" },
+    { name: "Trailer", span: true, ref: "trailer" },
+    { name: "How to play", span: true, ref: "how-to-play" },
+    { name: "Gallery", span: false, ref: "gallery" },
   ];
 
   return (
@@ -13,8 +13,9 @@ const NavUl = ({ menuOpen }) => {
           <li key={item.name}>
             <a
               tabIndex={menuOpen === true ? 0 : -1}
-              href={`#${item.name}`}
+              href={`#${item.ref}`}
               rel="noreferrer"
+              onClick={handleClose}
             >
               {item.name}
             </a>

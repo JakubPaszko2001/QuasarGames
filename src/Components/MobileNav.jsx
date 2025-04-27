@@ -59,7 +59,7 @@ const MobileNav = () => {
         >
           <IoMdClose className="w-[50px] h-[50px] text-white" />
         </button>
-        <NavUl menuOpen={menuOpen} />
+        <NavUl menuOpen={menuOpen} handleClose={handleMenuClose} />
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
           <Icons menuOpen={menuOpen} />
         </div>
