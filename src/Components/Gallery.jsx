@@ -1,16 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel } from 'swiper/modules'
 import Gold_Line from "../assets/Gold_Line.png"
 import 'swiper/css'
 import 'swiper/css/mousewheel'
 
-// Vite: dynamiczny import wszystkich obrazów z folderu gallery
 const imageModules = import.meta.glob('../assets/gallery/*.{jpg,jpeg,png,svg,webp}', { eager: true })
 const images = Object.values(imageModules).map((mod) => mod.default)
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
+  const swiperRef = useRef(null)
+
+  const closeModal = () => {
+    if (selectedImage) {
+      const currentIndex = images.indexOf(selectedImage)
+      if (swiperRef.current && swiperRef.current.swiper) {
+        swiperRef.current.swiper.slideToLoop(currentIndex, 0) // zmiana slajdu bez animacji
+      }
+    }
+    setSelectedImage(null)
+  }
 
   return (
     <div className="w-full h-screen bg-black flex flex-col">
@@ -24,6 +34,7 @@ const Gallery = () => {
       {/* Swiper */}
       <div className="h-4/5 px-10 flex">
         <Swiper
+          ref={swiperRef}
           direction="vertical"
           loop={true}
           mousewheel={true}
@@ -36,17 +47,17 @@ const Gallery = () => {
           {images.map((src, index) => (
             <SwiperSlide
               key={index}
-              className="transition-all duration-700 ease-in-out"
+              className="transition-all duration-700 ease-in-out translate-y-[8%] lg:-translate-y-[13%]"
               onClick={() => setSelectedImage(src)}
             >
-              {/* <img
-                loading="lazy"
-                src={src}
-                alt={`slide-${index}`}
-                className="object-cover rounded-2xl cursor-pointer translate-y-[40px]"
-              /> */}
-              <img  loading="lazy"  src={src}  alt={`slide-${index}`}  className="object-cover rounded-2xl cursor-pointer translate-y-[40px] lg:max-h-[300px] lg:w-auto"/>
-
+              <div className="w-full h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden">
+                <img
+                  loading="lazy"
+                  src={src}
+                  alt={`slide-${index}`}
+                  className="max-h-full max-w-full object-contain rounded-2xl cursor-pointer"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -56,10 +67,10 @@ const Gallery = () => {
       {selectedImage !== null && (
         <div
           className="fixed inset-0 bg-black/80 backdrop-blur-sm flex justify-center items-center z-50 px-4"
-          onClick={() => setSelectedImage(null)}
+          onClick={closeModal}
         >
           <button
-            onClick={() => setSelectedImage(null)}
+            onClick={closeModal}
             className="absolute top-4 right-4 text-white text-3xl bg-black/60 rounded-full p-2 hover:bg-black/80 z-50"
           >
             ✕
@@ -94,7 +105,6 @@ const Gallery = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              // loading="lazy"
               src={selectedImage}
               alt="modal"
               className="max-h-[90vh] max-w-full object-contain rounded-xl shadow-xl"
