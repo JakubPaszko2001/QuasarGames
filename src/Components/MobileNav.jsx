@@ -13,14 +13,14 @@ const MobileNav = () => {
 
   function handleMenuOpen() {
     setMenuOpen(!menuOpen);
-    gsap.to(asideRef.current, { y: "0%", duration: 1, ease: "power1.inOut" });
+    gsap.to(asideRef.current, { y: "0%", duration: 0.8, ease: "power1.inOut" });
   }
 
   function handleMenuClose() {
     setMenuOpen(!menuOpen);
     gsap.to(asideRef.current, {
       y: "-100%",
-      duration: 1,
+      duration: 0.8,
       ease: "power1.inOut",
     });
   }
