@@ -7,6 +7,7 @@ import Trailer_Section from '../Components/Trailer_Section'
 import How_To_Play_Section from '../Components/How_To_Play_Section'
 import Gallery from '../Components/Gallery'
 import QuickInfo from '../Components/QuickInfo'
+import Newsletter from '../Components/Newsletter'
 import Footer from '../Components/Footer'
 import Gold_Line from "../assets/Gold_Line.png"
 
@@ -26,23 +27,19 @@ const Main = () => {
       <Gallery />
       <Footer />
       {/* Scroll to top button */}
-      <a
-  href="#main-page"
-  className="fixed bottom-6 right-6 w-14 h-14 flex items-center justify-center rounded-full bg-black/10 backdrop-blur-md border border-gray-500 text-white hover:bg-white/10 transition-all duration-300 z-50"
-  title="Back to top"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth={2}
-    className="w-6 h-6"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
-  </svg>
-</a>
-
+      <a href="#main-page" className="fixed bottom-6 right-6 w-14 h-14 flex items-center justify-center rounded-full bg-black/10 backdrop-blur-md border border-gray-500 text-white hover:bg-white/10 transition-all duration-300 z-50" title="Back to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+        className="w-6 h-6"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+      </a>
+      <Newsletter />
     </main>
   )
 }
