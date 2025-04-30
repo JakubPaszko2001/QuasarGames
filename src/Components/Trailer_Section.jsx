@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import ra from "../assets/ra2.webp";
 import emblemat from "../assets/Emblemat.webp";
-import Main_Background from "../assets/Main_Background.webp";
+import TrailerPhoto from "../assets/TrailerPhoto.webp";
 import Play_button from "../assets/play-button.webp";
 
 const Trailer_Section = () => {
@@ -48,7 +48,7 @@ const Trailer_Section = () => {
       >
         <img
           loading="lazy"
-          src={Main_Background}
+          src={TrailerPhoto}
           alt="Miniatura wideo"
           className="w-full transition-opacity duration-700 group-hover:opacity-80"
         />

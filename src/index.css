@@ -11,6 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
+input::placeholder {
+  color: white;
+  margin-left: 12px;
+  opacity: 1;
+}
+
 @font-face {
   font-family: "Customfont";
   src: url("../src/assets/RNS-B.ttf");
@@ -34,6 +40,10 @@ html {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 8s linear infinite;
+}
+
+input {
+  padding-left: 1rem; /* To przesunie też placeholder */
 }
 
 .kranky-regular {
